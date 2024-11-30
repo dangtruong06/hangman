@@ -1,0 +1,84 @@
+h1{
+    font-size: 4em;
+    text-align: center;
+    border: 3px solid black;
+}
+.keyboard{
+    position: relative;
+    top: 400px;
+    left: 50px;
+    width: 50vw; 
+    text-align: center;
+    
+
+}
+.buttons{
+    width: 70px;
+    font-size: 2em;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 4px;
+    background-color: hsl(0, 3%, 64%);
+
+}
+.buttons:hover{
+    background-color: hsl(0, 3%, 74%);
+}
+.buttons:active{
+    background-color: hsl(0, 70%, 73%);
+}
+
+#start-btn{
+    font-size:1.7em;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: hsl(33, 100%, 60%);
+    position: relative;
+    left: 720px;
+    top: 130px;
+}
+#start-btn:hover{
+    background-color: hsl(33, 100%, 70%);
+}
+#start-btn:active{
+    background-color: hsl(33, 100%, 80%);
+}
+
+#images{
+    position: fixed;
+    left: 1100px;
+    top: 270px;
+    width: 30em;
+
+
+}
+#hint{
+    position: relative;
+    bottom: 100px;
+    width: 51vw;
+    font-size: 6em;
+    text-align: center;
+    border: 3px solid black;
+}
+#display{
+    font-size: 3em;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    top: 460px;
+    left: 620px;
+}
+
+#message{
+    font-size: 1.5em;
+    position:fixed;
+    top: 800px;
+}
+
+#win-lose{
+    position: fixed;
+    right: 650px;
+    top: 250px;
+    font-size: 2.3em;
+}

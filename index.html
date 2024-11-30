@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Welcome to Hangman</h1>
+
+    <div class="keyboard">
+
+        <div class="row1">
+            <button class="buttons" onclick="appendDisplay('Q')" id="Q">Q</button>
+            <button class="buttons" onclick="appendDisplay('W')" id="Q">W</button>
+            <button class="buttons" onclick="appendDisplay('E')" id="Q">E</button>
+            <button class="buttons" onclick="appendDisplay('R')" id="Q">R</button>
+            <button class="buttons" onclick="appendDisplay('T')" id="Q">T</button>
+            <button class="buttons" onclick="appendDisplay('Y')" id="Q">Y</button>
+            <button class="buttons" onclick="appendDisplay('U')" id="Q">U</button>
+            <button class="buttons" onclick="appendDisplay('I')" id="Q">I</button>
+            <button class="buttons" onclick="appendDisplay('O')" id="Q">O</button>
+            <button class="buttons" onclick="appendDisplay('P')" id="Q">P</button>
+        </div>
+
+        <div class="row2">
+            <button class="buttons" onclick="appendDisplay('A')" id="Q">A</button>
+            <button class="buttons" onclick="appendDisplay('S')" id="Q">S</button>
+            <button class="buttons" onclick="appendDisplay('D')" id="Q">D</button>
+            <button class="buttons" onclick="appendDisplay('F')" id="Q">F</button>
+            <button class="buttons" onclick="appendDisplay('G')" id="Q">G</button>
+            <button class="buttons" onclick="appendDisplay('H')" id="Q">H</button>
+            <button class="buttons" onclick="appendDisplay('J')" id="Q">J</button>
+            <button class="buttons" onclick="appendDisplay('K')" id="Q">K</button>
+            <button class="buttons" onclick="appendDisplay('L')" id="Q">L</button>
+        </div>
+
+        <div class="row3">
+            <button class="buttons" onclick="appendDisplay('Z')" id="Q">Z</button>
+            <button class="buttons" onclick="appendDisplay('X')" id="Q">X</button>
+            <button class="buttons" onclick="appendDisplay('C')" id="Q">C</button>
+            <button class="buttons" onclick="appendDisplay('V')" id="Q">V</button>
+            <button class="buttons" onclick="appendDisplay('B')" id="Q">B</button>
+            <button class="buttons" onclick="appendDisplay('N')" id="Q">N</button>
+            <button class="buttons" onclick="appendDisplay('M')" id="Q">M</button>
+        </div>
+        
+    </div>
+    <button id="start-btn" onclick="randomWord()">Randomize</button>
+    <div id="hint">
+        
+    </div>
+    
+    <img id="images" src="">
+    
+    <input readonly id="display">
+
+    <div id="message">
+
+    </div>
+
+    <div id="win-lose">
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
