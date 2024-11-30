@@ -58,7 +58,8 @@ h1{
     width: 51vw;
     font-size: 6em;
     text-align: center;
-    border: 3px solid black;
+    border: 3px solid green;
+    max-width: 90%;
 }
 #display{
     font-size: 3em;
