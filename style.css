@@ -3,6 +3,9 @@ h1{
     text-align: center;
 
 }
+#instructions{
+    font-size: 1.5em;
+}
 .keyboard{
     position: relative;
     top: 400px;
@@ -15,9 +18,10 @@ h1{
 .buttons{
     width: 70px;
     font-size: 2em;
-    padding: 5px;
+    padding: 8px;
     border-radius: 10px;
     margin: 4px;
+    box-shadow: 5px 2px;
     background-color: hsl(220, 100%, 60%);
 
 }
@@ -67,12 +71,12 @@ h1{
     width: 70px;
     height: 70px;
     position: fixed;
-    top: 460px;
+    top: 550px;
     left: 620px;
 }
 
 #win-lose{
     border: none;
     position: relative;
-    top: 400px;
+    top: 200px;
 }

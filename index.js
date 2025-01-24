@@ -59,11 +59,11 @@ function appendDisplay(word){
 
     compareAns = hintLength.join('');
 
-    if(compareAns == answer && lives < 5){
-        win.textContent = "You WIN!";
+    if(compareAns == answer && lives <= 5){
+        win.textContent = "You WIN! Press 'randomize' to play again";
     }
     else if(lives > 5){
-        win.textContent = `You lost! Answer is ${answer}`;
+        win.textContent = `You lost! Answer is ${answer}. Press 'randomize' to play again`;
     }
     
     man.src=`images/${lives}.png`;
