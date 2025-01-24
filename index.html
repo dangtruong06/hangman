@@ -7,44 +7,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>Welcome to Hangman</h1>
+    <header style="background-color:hsl(220, 100%, 60%)">
+        <h1>Welcome to Hangman</h1>
+        <hr>
+    </header>
+    
+    
 
     <div class="keyboard">
 
         <div class="row1">
             <button class="buttons" onclick="appendDisplay('Q')" id="Q">Q</button>
-            <button class="buttons" onclick="appendDisplay('W')" id="Q">W</button>
-            <button class="buttons" onclick="appendDisplay('E')" id="Q">E</button>
-            <button class="buttons" onclick="appendDisplay('R')" id="Q">R</button>
-            <button class="buttons" onclick="appendDisplay('T')" id="Q">T</button>
-            <button class="buttons" onclick="appendDisplay('Y')" id="Q">Y</button>
-            <button class="buttons" onclick="appendDisplay('U')" id="Q">U</button>
-            <button class="buttons" onclick="appendDisplay('I')" id="Q">I</button>
-            <button class="buttons" onclick="appendDisplay('O')" id="Q">O</button>
-            <button class="buttons" onclick="appendDisplay('P')" id="Q">P</button>
+            <button class="buttons" onclick="appendDisplay('W')" id="W">W</button>
+            <button class="buttons" onclick="appendDisplay('E')" id="E">E</button>
+            <button class="buttons" onclick="appendDisplay('R')" id="R">R</button>
+            <button class="buttons" onclick="appendDisplay('T')" id="T">T</button>
+            <button class="buttons" onclick="appendDisplay('Y')" id="Y">Y</button>
+            <button class="buttons" onclick="appendDisplay('U')" id="U">U</button>
+            <button class="buttons" onclick="appendDisplay('I')" id="I">I</button>
+            <button class="buttons" onclick="appendDisplay('O')" id="O">O</button>
+            <button class="buttons" onclick="appendDisplay('P')" id="P">P</button>
         </div>
 
         <div class="row2">
-            <button class="buttons" onclick="appendDisplay('A')" id="Q">A</button>
-            <button class="buttons" onclick="appendDisplay('S')" id="Q">S</button>
-            <button class="buttons" onclick="appendDisplay('D')" id="Q">D</button>
-            <button class="buttons" onclick="appendDisplay('F')" id="Q">F</button>
-            <button class="buttons" onclick="appendDisplay('G')" id="Q">G</button>
-            <button class="buttons" onclick="appendDisplay('H')" id="Q">H</button>
-            <button class="buttons" onclick="appendDisplay('J')" id="Q">J</button>
-            <button class="buttons" onclick="appendDisplay('K')" id="Q">K</button>
-            <button class="buttons" onclick="appendDisplay('L')" id="Q">L</button>
+            <button class="buttons" onclick="appendDisplay('A')" id="A">A</button>
+            <button class="buttons" onclick="appendDisplay('S')" id="S">S</button>
+            <button class="buttons" onclick="appendDisplay('D')" id="D">D</button>
+            <button class="buttons" onclick="appendDisplay('F')" id="F">F</button>
+            <button class="buttons" onclick="appendDisplay('G')" id="G">G</button>
+            <button class="buttons" onclick="appendDisplay('H')" id="H">H</button>
+            <button class="buttons" onclick="appendDisplay('J')" id="J">J</button>
+            <button class="buttons" onclick="appendDisplay('K')" id="K">K</button>
+            <button class="buttons" onclick="appendDisplay('L')" id="L">L</button>
         </div>
 
         <div class="row3">
-            <button class="buttons" onclick="appendDisplay('Z')" id="Q">Z</button>
-            <button class="buttons" onclick="appendDisplay('X')" id="Q">X</button>
-            <button class="buttons" onclick="appendDisplay('C')" id="Q">C</button>
-            <button class="buttons" onclick="appendDisplay('V')" id="Q">V</button>
-            <button class="buttons" onclick="appendDisplay('B')" id="Q">B</button>
-            <button class="buttons" onclick="appendDisplay('N')" id="Q">N</button>
-            <button class="buttons" onclick="appendDisplay('M')" id="Q">M</button>
+            <button class="buttons" onclick="appendDisplay('Z')" id="Z">Z</button>
+            <button class="buttons" onclick="appendDisplay('X')" id="X">X</button>
+            <button class="buttons" onclick="appendDisplay('C')" id="C">C</button>
+            <button class="buttons" onclick="appendDisplay('V')" id="V">V</button>
+            <button class="buttons" onclick="appendDisplay('B')" id="B">B</button>
+            <button class="buttons" onclick="appendDisplay('N')" id="N">N</button>
+            <button class="buttons" onclick="appendDisplay('M')" id="M">M</button>
         </div>
         
     </div>
@@ -57,13 +61,7 @@
     
     <input readonly id="display">
 
-    <div id="message">
-
-    </div>
-
-    <div id="win-lose">
-        
-    </div>
+    <h1 id="win-lose">hello</h1>
 
     <script src="index.js"></script>
 </body>

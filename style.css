@@ -1,7 +1,7 @@
 h1{
     font-size: 4em;
     text-align: center;
-    border: 3px solid black;
+
 }
 .keyboard{
     position: relative;
@@ -18,14 +18,14 @@ h1{
     padding: 5px;
     border-radius: 10px;
     margin: 4px;
-    background-color: hsl(0, 3%, 64%);
+    background-color: hsl(220, 100%, 60%);
 
 }
 .buttons:hover{
-    background-color: hsl(0, 3%, 74%);
+    background-color: hsl(220, 90%, 65%);
 }
 .buttons:active{
-    background-color: hsl(0, 70%, 73%);
+    background-color: rgb(150, 179, 237);
 }
 
 #start-btn{
@@ -42,6 +42,7 @@ h1{
 }
 #start-btn:active{
     background-color: hsl(33, 100%, 80%);
+    background-color: tom;
 }
 
 #images{
@@ -58,7 +59,6 @@ h1{
     width: 51vw;
     font-size: 6em;
     text-align: center;
-    border: 3px solid green;
     max-width: 90%;
 }
 #display{
@@ -71,15 +71,8 @@ h1{
     left: 620px;
 }
 
-#message{
-    font-size: 1.5em;
-    position:fixed;
-    top: 800px;
-}
-
 #win-lose{
-    position: fixed;
-    right: 650px;
-    top: 250px;
-    font-size: 2.3em;
+    border: none;
+    position: relative;
+    top: 400px;
 }

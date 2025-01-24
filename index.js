@@ -4,6 +4,8 @@ const man = document.getElementById("images");
 const message = document.getElementById("message");
 const win = document.getElementById("win-lose");
 
+const buttons = document.getElementsByClassName("buttons"); //get buttons class to change color
+
 let lives = 0;
 let usedWords = [];
 let hintLength = [];
@@ -15,7 +17,7 @@ function randomWord(){
     hintLength = [];
     usedWords = [];
     display.value = "";
-    message.textContent = "List of used words: ";
+
     answer = words[Math.floor(Math.random() * words.length)].toUpperCase();
     
     for(let i = 0; i < answer.length; i++){
@@ -27,9 +29,15 @@ function randomWord(){
 
     console.log(answer); // display the answer in console
 
+    for(let i = 0; i < buttons.length; i++){
+        buttons[i].style.backgroundColor = "hsl(220, 72%, 56%)";
+    }
+    
+    
 }
  
 function appendDisplay(word){
+    const color = document.getElementById(word);
     display.value = word;
     
     if(!answer.includes(word) && !usedWords.includes(word)){
@@ -40,8 +48,8 @@ function appendDisplay(word){
     }
     if(!usedWords.includes(word)){
         usedWords.push(word);
+        color.style.backgroundColor = "tomato";
     }
-    message.textContent = `List of used words: ${usedWords.join(" ")} `;
     
     for(let i = 0; i < answer.length; i++){
         if(answer[i] == word){
@@ -52,10 +60,10 @@ function appendDisplay(word){
     compareAns = hintLength.join('');
 
     if(compareAns == answer && lives < 5){
-        win.textContent = "You WIN!"
+        win.textContent = "You WIN!";
     }
     else if(lives > 5){
-        win.textContent = "You lost!";
+        win.textContent = `You lost! Answer is ${answer}`;
     }
     
     man.src=`images/${lives}.png`;
