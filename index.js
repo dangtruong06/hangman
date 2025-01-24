@@ -1,4 +1,3 @@
-const words = ["aardvark", "alligator", "alpaca", "ant", "anteater", "antelope", "ape", "armadillo", "baboon", "badger", "bat", "bear", "beaver", "bee", "bison", "boar", "buffalo", "butterfly", "camel", "capybara", "caribou", "cat", "caterpillar", "cattle", "chamois", "cheetah", "chicken", "chimpanzee", "chinchilla", "chough", "clam", "cobra", "cockroach", "cod", "coyote", "crab", "crane", "crocodile", "crow", "curlew", "deer", "dinosaur", "dog", "dogfish", "dolphin", "donkey", "dormouse", "dotterel", "dove", "dragonfly", "duck", "dugong", "dunlin", "eagle", "echidna", "eel", "eland", "elephant",  "elk", "emu", "falcon", "ferret", "finch", "fish", "flamingo", "fly", "fox", "frog", "gaur", "gazelle", "gerbil", "giraffe", "gnat", "gnu", "goat", "goldfinch", "goldfish", "goose", "gorilla", "goshawk", "grasshopper", "grouse", "guanaco", "gull", "hamster", "hare", "hawk", "hedgehog", "heron", "herring", "hippopotamus", "hornet", "horse", "human"];
 const hint = document.getElementById("hint");
 const man = document.getElementById("images");
 const message = document.getElementById("message");
@@ -31,8 +30,8 @@ function randomWord(){
 
     for(let i = 0; i < buttons.length; i++){
         buttons[i].style.backgroundColor = "hsl(220, 72%, 56%)";
+        buttons[i].style.color = "black"
     }
-    
     
 }
  
@@ -48,7 +47,8 @@ function appendDisplay(word){
     }
     if(!usedWords.includes(word)){
         usedWords.push(word);
-        color.style.backgroundColor = "tomato";
+        color.style.backgroundColor = "hsla(220, 100%, 60%, 0.46)";
+        color.style.color = "hsla(222, 5%, 48%, 0.459)";
     }
     
     for(let i = 0; i < answer.length; i++){
